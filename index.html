@@ -1,57 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Forecast</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-  </head>
-  <body>
-    <section class="section">
-      <div class="container">
-        <h1 class="title has-text-centered">Weather Forecast</h1>
-        <form id="searchForm">
-          <div class="field has-addons">
-            <div class="control is-expanded">
-              <input
-                class="input"
-                type="text"
-                id="cityInput"
-                placeholder="Enter city name"
-              />
-            </div>
-            <div class="control">
-              <button type="submit" class="button is-info">Search</button>
-            </div>
-          </div>
-        </form>
-        <div id="weatherContainer" class="columns is-multiline"></div>
-        <h2 class="title mt-6 has-text-centered">Search History</h2>
-        <ul id="searchHistory" class="has-text-centered"></ul>
-      </div>
-    </section>
-    <footer class="footer p-6">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Weather Forecast Web App</strong> by
-          <a
-            href="https://github.com/xkolsha"
-            target="_blank"
-            rel="noopener noreferrer"
-            >&copy; 2023 Aviad Kohn</a
-          >
-          The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-        </p>
-      </div>
-    </footer>
-    <script src="assets/js/script.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, compatibility, and viewport settings -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the web page -->
+    <title>Weather Dashboard</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <!-- Main title of the dashboard -->
+    <h1 id="title">Weather Dashboard</h1>
+    
+    <!-- Subheading or description -->
+    <h2 id="description">Welcome! Search for your city and see the weather!</h2>
+    
+    <!-- Main container for the body content -->
+    <div id="body-container">
+        
+        <!-- Container for search functionality -->
+        <div id="search-container">
+      
+            <h2 id="search">Search for a City:</h2>
+
+            <!-- Form for city search -->
+            <form id="new-search">
+                <!-- Input field for entering city name -->
+                <input type="text" id="new-city" placeholder="Example: Miami Beach" />
+                <!-- Button to trigger search -->
+                <input type="button" id="search-button" value="Search" />
+            </form>
+
+            <!-- Divider line -->
+            <div id="line"></div>
+
+            <!-- Section to display search history -->
+            <section id="search-history"></section>
+        </div>
+        
+        <!-- Container for displaying city weather information -->
+        <div id="city-weather">
+            <!-- Main section for current city weather and 5-day forecast -->
+            <main id="current-city">
+                <!-- Container for today's weather -->
+                <div id="weather-today"></div>
+                
+                <!-- Container for 5-day weather forecast -->
+                <div id="five-day"></div>
+            </main>
+        </div>
+    </div>
+    
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="./assets/js/script.js"></script>
+</body>
 </html>
