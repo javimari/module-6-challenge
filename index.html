@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">Weather Forecast</h1>
+        <form id="searchForm">
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input
+                class="input"
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+              />
+            </div>
+            <div class="control">
+              <button type="submit" class="button is-info">Search</button>
+            </div>
+          </div>
+        </form>
+        <div id="weatherContainer" class="columns is-multiline"></div>
+        <h2 class="title mt-6 has-text-centered">Search History</h2>
+        <ul id="searchHistory" class="has-text-centered"></ul>
+      </div>
+    </section>
+    <footer class="footer p-6">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Weather Forecast Web App</strong> by
+          <a
+            href="https://github.com/xkolsha"
+            target="_blank"
+            rel="noopener noreferrer"
+            >&copy; 2023 Aviad Kohn</a
+          >
+          The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+        </p>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
