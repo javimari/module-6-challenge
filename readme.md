@@ -10,8 +10,13 @@ Third-party APIs allow developers to access their data and functionality by maki
 - [How to Complete the Challenge](#how-to-complete-the-challenge)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Mock Up](#mock-up)
+- [Links](#Links)
 
+## How to Complete the Challenge
 
+- Clone the starter codeLinks to an external site.
+- Starter code is in a folder called Develop (will be in a branch called starter code).
+- Modify the code to meet the Acceptance Criteria.
 
 ## User Story
 
@@ -33,5 +38,9 @@ SO THAT I can plan a trip accordingly
 
 ## Mock Up
 
-![Mock up of the website]
+![Mock_Up](<assets/images/module 6 screen cap.PNG>)
+![GIF_of_Weather_Dashboard](<assets/images/weather dashboard.gif>)
+
+## Links
+https://github.com/javimari/module-6-challenge
 

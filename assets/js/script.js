@@ -158,7 +158,7 @@ var initListeners = function () {
 
     // Event listener for the search button click
     $("#search-button").click(function(){
-        let city = $("#new-city").val().trim() || "Raleigh";
+        let city = $("#new-city").val().trim() || "Miami Beach";
         addCity(city);
         // Clear the search input field
         $("#new-city").val('');
@@ -166,7 +166,7 @@ var initListeners = function () {
 
     // Event listener for keyup event on the city input field
     $("#new-city").keyup(function(event){
-        let city = $(this).val().trim() || "Raleigh";
+        let city = $(this).val().trim() || "Miami Beach";
         if (event.key === 'Enter') {
             addCity(city);
             // Clear the search input field
