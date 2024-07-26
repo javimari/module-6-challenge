@@ -44,3 +44,4 @@ SO THAT I can plan a trip accordingly
 ## Links
 https://github.com/javimari/module-6-challenge
 
+https://javimari.github.io/module-6-challenge/
